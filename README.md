@@ -1,9 +1,12 @@
 # Módulo 4 de NodeJS Rocket-Seat
 
-Esse módulo é um estudo de Design Dirigido à Domínio. O DDD não diz respeito à implementação e ao código em si, mas sim às entidades e casos de uso que moldam a aplicação.
+Esse módulo é um estudo de Design Dirigido à Domínio. O DDD não diz respeito à implementação e ao código em si, mas sim às entidades e casos de uso que moldam a aplicação. Ele trata de converter os problemas do mundo real para uma linguagem de domínio.
+  > DDD é com conceito desconexo de Arquitetura de Software, pois na Arquitetura de Software já é trabalhada a parte ferramental, de linguagem de programação, da estrutura do projeto, etc.
+
++ Domínio: Área de entendimento, área de conhecimento que engloba os processos e comportamentos essenciais para o negócio.
 
 + Domain Experts: Pessoas que entendem a fundo o problema que deve ser resolvido. São pessoas que lidam no dia a dia com esse problema.
-  > É necessária a conversa
+  > Conversar é uma das melhores formas de entender quais são os problemas dos experts.
 
 + Linguagem ubíqua: Linguagem que pode ser entendida por todas as pessoas dialogando sobre o problema a ser resolvido.
   > Nomenclaturas utilizadas pelos desenvolvedores nem sempre são as mesmas utilizadas pelos Domain Experts. Exemplo: usuário (cliente, fornecedor, atendente, barman)
@@ -24,15 +27,114 @@ ___
 ### Palavras chave:
 >Domain-driven Design (DDD), Domain Experts, Linguagem ubíqua
 
+## Glossário sobre DDD:
+
++ Pode ser acessado através [dessa página](https://efficient-sloth-d85.notion.site/Gloss-rio-DDD-3a81b4df36d348a299ccbc53f38a1665) no Notion.
+
 ## Conteúdo Programático do Módulo 4:
 
 <details style="font-size: 16px">
-<summary><strong style="font-size: 18px">1. Submod 1</strong></summary>
+<summary><strong style="font-size: 18px">1. Fundamentos do DDD</strong></summary>
 
   ---
 
-  + Aula 1
-  + Aula 2
+  + Design de software e DDD
+  + Entidades e casos de uso
+  + Primeiro caso de uso
+  + Mapeando relacionamentos
+  + Value Object de slug
+  + Classe base de entidades
+  + Classe base de entidades
+  + ID das entidades
+  + Mapeando propriedades
+  + Abstraindo criação de entidades
+  + Getters & Setters das entidades
+  + Path aliases e Vitest globals
+
+  ---
+</details>
+
+<details style="font-size: 16px">
+<summary><strong style="font-size: 18px">2. Fórum com DDD & Clean Architecture</strong></summary>
+
+  ---
+
+  + Configuração do ESLint
+  + Fundamentos de Clean Architecture
+  + Refatorando as pastas
+  + Caso de uso: Criar pergunta
+  + Refatorando os teste unitários
+  + Caso de uso: Buscar pergunta pelo slug
+  + Factories de testes
+  + Gerando dados fictícios
+  + Caso de uso: Deletar pergunta
+  + Caso de uso: Deletar resposta
+  + Caso de uso: Editar pergunta
+  + Caso de uso: Editar resposta
+  + Caso de uso: Escolher melhor resposta
+  + Caso de uso: Listar perguntas recentes
+  + Caso de uso: Listas respostas da pergunta
+  + Entidades de comentários
+  + Classe base de comentários
+  + Caso de uso: Comentar na pergunta
+  + Caso de uso: Comentar na resposta
+  + Caso de uso: Deletar comentário da pergunta
+  + Caso de uso: Deletar comentário da resposta
+  + Caso de uso: Listar comentários da pergunta
+  + Caso de uso: Listar comentários da resposta
+
+  ---
+</details>
+
+<details style="font-size: 16px">
+<summary><strong style="font-size: 18px">3. Functional Error Handling</strong></summary>
+
+  ---
+
+  + Problemas com Error Handling
+  + Functional Error Handling
+  + Testando classes de erro
+  + Criando erros genéricos
+  + Refatorando casos de uso
+  + Refatorando testes unitários
+
+  ---
+</details>
+
+<details style="font-size: 16px">
+<summary><strong style="font-size: 18px">4. Aggregates & Watched Lists</strong></summary>
+
+  ---
+
+  + Aggregates & Watched Lists
+  + Classe base de AggregateRoot
+  + Entidades de anexo
+  + Criando pergunta com anexos
+  + Pattern: WatchedList
+  + Editando pergunta com anexos
+  + Teste de edição da pergunta
+  + Excluindo anexos da pergunta
+  + Anexos nas respostas
+
+  ---
+</details>
+
+<details style="font-size: 16px">
+<summary><strong style="font-size: 18px">5. Subdomínios & Domain Events</strong></summary>
+
+  ---
+
+  + Fundamentos de subdomínios
+  + Entidade de notificação
+  + Caso de uso: envio de notificação
+  + Caso de uso: ler notificação
+  + Fluxo de eventos de domínio
+  + Estrutura de eventos de domínio
+  + Testando eventos de domínio
+  + Evento: Resposta criada
+  + Ouvindo um evento de domínio
+  + Enviando notificação no subscriber
+  + Fluxo de melhor resposta
 
   ---
 </details>
