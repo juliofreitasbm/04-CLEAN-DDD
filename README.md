@@ -8,7 +8,7 @@ Esse módulo é um estudo de Design Dirigido à Domínio. O DDD não diz respeit
 + Domain Experts: Pessoas que entendem a fundo o problema que deve ser resolvido. São pessoas que lidam no dia a dia com esse problema.
   > Conversar é uma das melhores formas de entender quais são os problemas dos experts.
 
-+ Linguagem ubíqua: Linguagem que pode ser entendida por todas as pessoas dialogando sobre o problema a ser resolvido.
++ Linguagem ubíqua: Linguagem universal que pode ser entendida por todas as pessoas dialogando sobre o problema a ser resolvido.
   > Nomenclaturas utilizadas pelos desenvolvedores nem sempre são as mesmas utilizadas pelos Domain Experts. Exemplo: usuário (cliente, fornecedor, atendente, barman)
 
 + Agregados
@@ -27,9 +27,9 @@ ___
 ### Palavras chave:
 >Domain-driven Design (DDD), Domain Experts, Linguagem ubíqua
 
-## Glossário sobre DDD:
+### Glossário sobre DDD:
 
-+ Pode ser acessado através [dessa página](https://efficient-sloth-d85.notion.site/Gloss-rio-DDD-3a81b4df36d348a299ccbc53f38a1665) no Notion.
+>Pode ser acessado através [dessa página](https://efficient-sloth-d85.notion.site/Gloss-rio-DDD-3a81b4df36d348a299ccbc53f38a1665) no Notion.
 
 ## Conteúdo Programático do Módulo 4:
 
@@ -152,6 +152,20 @@ ___
 
 + `npm i vitest -D` : Instala a ferramenta de testes vitest como dependência de desenvolvimento.
 + `npx vitest run` : Roda os testes definidos nos arquivos com extensão .spec.ts.
+
+### Aula "Dependências externas"
+
++ Scripts de teste para colocar no arquivo package.json:
+  ```
+  "scripts": {  
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  ```
+
+### Aula "Getters & Setters das entidades"
+
++ `npm i dayjs` : Biblioteca para lidar com datas.
 
 ## Autoria e Créditos:
 
