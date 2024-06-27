@@ -167,6 +167,32 @@ ___
 
 + `npm i dayjs` : Biblioteca para lidar com datas.
 
+### Aula "Path aliases e Vitest globals"
+
++ `npm i vite-tsconfig-paths` : Permite utilizar os "@" nas importações.
+
+### Aula "Configuração do ESLint"
+
++ `npm i eslint @rocketseat/eslint-config -D` : Instala o ESLint com a configuração da rocketseat.
++ Alteração nos scripts do package.json
+  ```
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
+  },
+  ```
++ `npm i eslint-plugin-vitest-globals -D` : Plugin para permitir que o ESLint reconheça algumas funções do vitest declaradas globalmente.
+
+### Aula "Refatorando as pastas"
+
++ Dica: Colocar a configuração `"explorer.compactFolders": false` no settings.json do VScode para melhorar a visualização das pastas.
+
+### Aula "Gerando dados fictícios"
+
++ `npm i @faker-js/faker -D`: Biblioteca para gerar dados aleatórios.
+
 ## Autoria e Créditos:
 
 + Documentação criada com carinho e dedicação por [Júlio César Freitas](https://github.com/juliofreitasbm) a serviço do [CREA-GO](https://www.creago.org.br/).

@@ -1,12 +1,12 @@
-import { Slug } from "./value-objects/slug"
-import { Entity } from "../../core/entities/entity"
-import { UniqueEntityID } from "../../core/entities/unique-entity-id"
-import { Optional } from "../types/optional"
-import dayjs from "dayjs"
+import { Slug } from './value-objects/slug'
+import { Entity } from '@/core/entities/entity'
+import { UniqueEntityID } from '@/core/entities/unique-entity-id'
+import { Optional } from '@/core/types/optional'
+import dayjs from 'dayjs'
 
-interface QuestionProps {
+export interface QuestionProps {
   authorId: UniqueEntityID
-  bestAnswerId?: UniqueEntityID 
+  bestAnswerId?: UniqueEntityID
   title: string
   content: string
   slug: Slug
@@ -35,7 +35,6 @@ export class Question extends Entity<QuestionProps> {
     return this.props.slug
   }
 
-
   get createdAt() {
     return this.props.createdAt
   }
@@ -49,42 +48,41 @@ export class Question extends Entity<QuestionProps> {
   }
 
   get excerpt() {
-    return this.content
-      .substring(0, 120)
-      .trimEnd()
-      .concat('...')
+    return this.content.substring(0, 120).trimEnd().concat('...')
   }
 
   private touch() {
     this.props.updatedAt = new Date()
   }
 
-  set title(title: string){
+  set title(title: string) {
     this.props.title = title
     this.props.slug = Slug.createFromText(title)
     this.touch()
   }
 
-  set content(content: string){
+  set content(content: string) {
     this.props.content = content
     this.touch()
   }
 
-
-  set bestAnswerId(bestAnswerId: UniqueEntityID | undefined){
+  set bestAnswerId(bestAnswerId: UniqueEntityID | undefined) {
     this.props.bestAnswerId = bestAnswerId
     this.touch()
   }
 
   static create(
     props: Optional<QuestionProps, 'createdAt' | 'slug'>,
-    id?: UniqueEntityID
+    id?: UniqueEntityID,
   ) {
-    const question = new Question({
-      ...props,
-      slug: props.slug ?? Slug.createFromText(props.title),
-      createdAt: new Date(),
-    }, id) 
+    const question = new Question(
+      {
+        ...props,
+        slug: props.slug ?? Slug.createFromText(props.title),
+        createdAt: new Date(),
+      },
+      id,
+    )
 
     return question
   }
