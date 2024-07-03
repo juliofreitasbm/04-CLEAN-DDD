@@ -25,7 +25,10 @@ Esse módulo é um estudo de Design Dirigido à Domínio. O DDD não diz respeit
 
 ___
 ### Palavras chave:
->Domain-driven Design (DDD), Domain Experts, Linguagem ubíqua
+>Domain-driven Design (DDD), Domain Experts, Linguagem ubíqua, Use Cases, Functional Error Handling, Aggregate Pattern, WatchedList Pattern
+
+### Fluxo de uso da Aplicação:
+>UI -> CONTROLLER -> CASO DE USO -> ENTIDADE -> CASO DE USO -> REPOSITÓRIO -> BANCO DE DADOS
 
 ### Glossário sobre DDD:
 
@@ -195,7 +198,7 @@ ___
 
 ### Aula "Gerando dados fictícios"
 
-+ `npm i @faker-js/faker -D`: Biblioteca para gerar dados aleatórios.
++ `npm i @faker-js/faker -D`: Biblioteca para gerar dados fictícios.
 
 ## Autoria e Créditos:
 
