@@ -25,7 +25,7 @@ Esse módulo é um estudo de Design Dirigido à Domínio. O DDD não diz respeit
 
 ___
 ### Palavras chave:
->Domain-driven Design (DDD), Domain Experts, Linguagem ubíqua, Use Cases, Functional Error Handling, Aggregate Pattern, WatchedList Pattern, Subdomínios (Core, Supporting, Generic)
+>Domain-driven Design (DDD), Domain Experts, Linguagem ubíqua, Use Cases, Functional Error Handling, Aggregate Pattern, WatchedList Pattern, Subdomínios (Core, Supporting, Generic), Desacoplamento, Sistema Pub/Sub (Publish/Subscribe).
 
 ### Fluxo de uso da Aplicação:
 >UI -> CONTROLLER -> CASO DE USO -> ENTIDADE -> CASO DE USO -> REPOSITÓRIO -> BANCO DE DADOS
